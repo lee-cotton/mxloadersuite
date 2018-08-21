@@ -1,4 +1,8 @@
 
 *.pyc
-content/.DS_Store
 *.DS_Store
+mxloadersuite.code-workspace
+Untitled-1
+logs/mxloadersuite.log
+.vscode/launch.json
+logs/mxloadersuite.log

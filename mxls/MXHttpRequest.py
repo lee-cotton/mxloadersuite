@@ -16,6 +16,10 @@ class ConnectionDetails(object):
         self.password = password
     def getPassword(self):
         return self.password
+    def setMaximoHome(self, maximoHome):
+        self.maximoHome = maximoHome
+    def getMaximoHome(self):
+        return self.maximoHome    
         
 class MXHttpRequest(object):
 
@@ -40,7 +44,7 @@ class MXHttpRequest(object):
         
         req = requests.post(url, data=request, headers=headers)
         
-        self.logger.info('Repsonse Status Code: ' + req.status_code)
+        self.logger.info('Repsonse Status Code: ' + str(req.status_code))
         self.logger.debug(req.text)
         
         if req.status_code == 500:

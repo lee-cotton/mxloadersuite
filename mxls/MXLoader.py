@@ -56,15 +56,15 @@ class MXLoader(object):
 
         httpRequest.sendRequest(objectStructure, request) 
 
-    def loadWorkBook(self, fileName):
+    def loadWorkBook(self, excelFile):
 
         #if the file name starts with '~$' then this is a temporay Excel file so it's skipped.
-        if fileName.name.startswith('~$'):
+        if excelFile.name.startswith('~$'):
             return
 
-        self.logger.info('Loading Workbook: ' + fileName.name)
+        self.logger.info('Loading Workbook: ' + excelFile.name)
 
-        wb = load_workbook(fileName)
+        wb = load_workbook(excelFile)
 
         configWorkSheet = wb['Config']
 
