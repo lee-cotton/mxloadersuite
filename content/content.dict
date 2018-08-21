@@ -1,0 +1,9 @@
+{
+  'content': {
+          'misc': ['INIT_DB.dbc','configdb'],
+          'models': ['MxLoader - UH-60M and T700-GE-701C Models - Systems.xlsm', 'XJET Model.xlsm'],
+          'aircaft': ['UH-60M Aircraft.xlsm', 'XJET Aircraft.xlsm'],
+          
+  },
+
+}
